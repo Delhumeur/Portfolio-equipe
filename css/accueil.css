@@ -350,18 +350,26 @@ h2 {
 
     background-image: url(/Images/DOFUSTURQUOISEOK.png);
     background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
 }
 #pr2 .devant{
     background-image: url(/Images/DOFUSVULBIS6.png);
     background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
 }
 #pr3 .devant{
     background-image: url(/Images/DOFUSOCRE4.png);
     background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
 }
 #pr4 .devant{
     background-image: url(/Images/DOFUSEMERAUDEINCROYABLE.png);
     background-size: 310px 500px;
+    background-size: cover;
+    background-position-x: center;
 }
 
 /* CSSCONTACT */
