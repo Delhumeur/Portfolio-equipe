@@ -39,8 +39,7 @@ window.addEventListener('scroll', () => {
   prevScrollPos = currentScrollPos;
 });
 
-// Set initial opacity
-navbar.style.opacity = '1';
+
 
 // Add a transition effect for a smooth fade
 navbar.style.transition = 'opacity 0.5s ease-in-out';
@@ -52,11 +51,6 @@ navbar.addEventListener("mouseout", function () {
   navbar.style.opacity = '0';
 });
 
-// Set initial opacity
-navbar.style.opacity = '0';
-
-// Add a transition effect for a smooth fade
-navbar.style.transition = 'opacity 0.5s ease-in-out';
 // // -------------TEXT APPARAIT FUR ET A MESURE----------
 
 // const titleElement = document.getElementById('animatedTitle');

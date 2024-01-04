@@ -403,8 +403,9 @@ h2 {
    flex-direction: column;
     width: 30%;
     height: 400px;
-
+    gap: 7px;
     padding-left: 7%;
+    padding-bottom: 25px;
     justify-content: center;
 }
 .renseignement{
