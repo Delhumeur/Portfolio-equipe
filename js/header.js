@@ -1,26 +1,15 @@
-let header = document.querySelector("#header");
-header.addEventListener("mouseover", () => {
-    header.classList.add("navOver")
-});
-header.addEventListener("mouseout", () => {
-    header.classList.remove("navOver")
-});
-
-
-// -----------PHOTO DE PROFIL CHANGE MOUSEOVER-----------
-
-const profilPic = document.getElementById('pp');
-const initialSrc = "./Images/julien_pp_3d.png"
-
-profilPic.addEventListener("mouseover", () => {
-  profilPic.src = "./Images/0020.png"
-});
-
-profilPic.addEventListener("mouseout", () => {
-  profilPic.src = initialSrc
-});
-
 // -----------NAV BAR-----------
+navbar.style.transition = 'opacity 0.5s ease-in-out';
+navbar.addEventListener("mouseover", function () {
+  navbar.style.opacity = '1';
+});
+
+navbar.addEventListener("mouseout", function () {
+  navbar.style.opacity = '0';
+});
+
+
+
 
 const navbar = document.getElementById('navbar');
 let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
@@ -38,18 +27,37 @@ window.addEventListener('scroll', () => {
 
   prevScrollPos = currentScrollPos;
 });
+// -----------PHOTO DE PROFIL CHANGE MOUSEOVER-----------
 
+const profilPic = document.getElementById('pp');
+const initialSrc = "./Images/julien_pp_3d.png"
 
+profilPic.addEventListener("mouseover", () => {
+  profilPic.src = "./Images/0020.png"
+});
+
+profilPic.addEventListener("mouseout", () => {
+  profilPic.src = initialSrc
+});
+// Flip des cartes
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Fonction pour inverser la carte
+    function flipCard() {
+      var card = this.querySelector(".interieur");
+      card.style.transform = card.style.transform === "rotateY(180deg)" ? "rotateY(0deg)" : "rotateY(180deg)";
+    }
+
+    // Ajouter l'événement à chaque élément avec la classe fliprojet
+    var flipElements = document.querySelectorAll(".fliprojet");
+    flipElements.forEach(function (element) {
+      element.addEventListener("mouseenter", flipCard);
+      element.addEventListener("mouseleave", flipCard);
+    });
+  });
 
 // Add a transition effect for a smooth fade
-navbar.style.transition = 'opacity 0.5s ease-in-out';
-navbar.addEventListener("mouseover", function () {
-  navbar.style.opacity = '1';
-});
 
-navbar.addEventListener("mouseout", function () {
-  navbar.style.opacity = '0';
-});
 
 // // -------------TEXT APPARAIT FUR ET A MESURE----------
 
@@ -93,19 +101,3 @@ navbar.addEventListener("mouseout", function () {
 
 // animateTitle();
 
-// Flip des cartes
-
-document.addEventListener("DOMContentLoaded", function () {
-    // Fonction pour inverser la carte
-    function flipCard() {
-      var card = this.querySelector(".interieur");
-      card.style.transform = card.style.transform === "rotateY(180deg)" ? "rotateY(0deg)" : "rotateY(180deg)";
-    }
-
-    // Ajouter l'événement à chaque élément avec la classe fliprojet
-    var flipElements = document.querySelectorAll(".fliprojet");
-    flipElements.forEach(function (element) {
-      element.addEventListener("mouseenter", flipCard);
-      element.addEventListener("mouseleave", flipCard);
-    });
-  });
