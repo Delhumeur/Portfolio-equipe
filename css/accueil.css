@@ -144,8 +144,8 @@ a {
 
 }
 
+
 #text {
-    color: white;
     margin-left: 5%;
     padding-left: 2%;
     padding-right: 1%;
@@ -176,7 +176,9 @@ a {
     gap: 7%;
 
 }
-
+.logo h2 {
+    color: white;
+}
 .logo {
     display: flex;
     flex-direction: column;
