@@ -25,7 +25,7 @@ html {
     height: 1080px;
     background: url(/Images/gif/4NB4.gif) center center no-repeat fixed;
     background-size: cover;
-    filter: blur(20px);
+    filter: blur(5px);
     z-index: -1;
     /* Place l'arrière-plan flou en dessous du contenu */
 }
@@ -51,6 +51,12 @@ a {
     font-size: 1.5rem;
     padding: 20px;
 }
+.englobe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 
 .pageContainer {
     display: flex;
@@ -58,11 +64,15 @@ a {
     align-items: center;
     flex-direction: column;
     color: rgb(226, 226, 226);
+    border-radius: 20px;
 }
 
 .pageContainer h2 {
-
-    padding: 0px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 20px;
+    padding: 5px;
     font-size: 2em;
     color: rgb(175, 175, 175);
 
@@ -136,7 +146,9 @@ a {
 
 #text {
     color: white;
-    padding-left: 7%;
+    margin-left: 5%;
+    padding-left: 2%;
+    padding-right: 1%;
     font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: bold;
@@ -144,6 +156,9 @@ a {
     width: 50%;
     display: flex;
     align-items: center;
+    background-color:  rgba(31, 38, 49, 0.7);
+    border-radius: 20px;
+    height: 300px;
 }
 
 #bang {
@@ -239,6 +254,10 @@ a {
     margin: 0;
     padding: 0;
     display: flex;
+    background-color:  rgba(31, 38, 49, 0.7);
+    border-radius: 7%;
+    padding: 2%;
+    
 }
 .pimgcontain{
     display: flex;
@@ -258,7 +277,7 @@ a {
 }
 
 .logocontain{
-    background-color: rgb(31, 38, 49);
+    background-color:  rgba(31, 38, 49);
     width: 292px;
     height: 81px;
     border-radius: 35px;
@@ -286,10 +305,14 @@ a {
 }
 
 
-h2 {
+.containprojet h2 {
     color: white;
     display: flex;
-    padding-left: 7%;
+    margin-left: 7%;
+    padding: 5px;
+    width: 69%;
+    background-color:  rgba(31, 38, 49, 0.7);
+    border-radius: 7%;
 
 
 }
@@ -335,20 +358,69 @@ h2 {
       }
 
 #pr1 .derriere{
-    background-image: url(/Images/chatmelon.webp);
-    background-size: 310px 500px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(31, 38, 49);
+    color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    text-align: center;
 }
 #pr2 .derriere{
-    background-image: url(/Images/stanislas.webp);
-    background-size: 310px 500px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(31, 38, 49);
+    color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    text-align: center;
 }
 #pr3 .derriere{
-    background-image: url(/Images/chatmelon.webp);
-    background-size: 310px 500px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(31, 38, 49);
+    color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    text-align: center;
 }
 #pr4 .derriere{
-    background-image: url(/Images/chatmelon.webp);
-    background-size: 310px 500px;
+    display: flex;
+    flex-direction: column;
+    background-color:  rgba(31, 38, 49);
+    color: white;
+    border-radius: 20px;
+    justify-content: space-between;
+    text-align: center;
+}
+#pr1 .derriere a{
+    color: black;
+}
+#pr2 .derriere a{
+    color: black;
+}
+#pr3 .derriere a{
+    color: black;
+}
+#pr4 .derriere a{
+    color: black;
+}
+.derriere button{
+    height: 70px;
+    font-weight: bold;
+    font-size: 24px;
+}
+#pr1 img{
+    border-radius:  20px 20px 0 0;
+}
+#pr2 img{
+    border-radius:  20px 20px 0 0;
+}
+#pr3 img{
+    border-radius:  20px 20px 0 0;
+}
+#pr4 img{
+    border-radius:  20px 20px 0 0;
 }
 #pr1 .devant{
 
@@ -392,14 +464,16 @@ h2 {
 }
 
 .BienCon{
-    /* background-color: aqua; */
-    padding-left: 7%;
+    background-color:  rgba(31, 38, 49, 0.7);
+    margin-left: 7%;
+    padding: 10px;
+    border-radius: 20px;
    font-size: large;
    font-family: 'Roboto', sans-serif;
     color: white;
     font-weight: bold;
     font-size: 24px;
-    width: 80%;
+    width: 83%;
 }
 
 .Nomasu{
@@ -408,9 +482,8 @@ h2 {
     width: 30%;
     height: 400px;
     gap: 7px;
-    padding-left: 7%;
     padding-bottom: 25px;
-    justify-content: center;
+    justify-content: center; 
 }
 .renseignement{
     height: 40px;
@@ -440,7 +513,7 @@ label{
     display: flex;
     justify-content: flex-end;
 }
-button{
+form button{
     font-size: large;
     font-family: 'Roboto', sans-serif;
      font-weight: bold;
@@ -457,9 +530,13 @@ button{
 
 form{
 
-    width: 100%;
+    width: 84%;
+    margin-left: 7%;
+    margin-right: 7%;
+    border-radius: 20px;
     display: flex;
     justify-content: center;
+    background-color:  rgba(31, 38, 49, 0.5);
 }
 
 input{
