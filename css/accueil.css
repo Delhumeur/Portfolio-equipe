@@ -352,7 +352,6 @@ a {
         backface-visibility: hidden;
         border-radius: 5%;
       }
-    
       .fliprojet .derriere {
         transform: rotateY(180deg);
       }

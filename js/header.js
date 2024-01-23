@@ -1,4 +1,5 @@
 // -----------NAV BAR-----------
+const navbar = document.getElementById('navbar');
 navbar.style.transition = 'opacity 0.5s ease-in-out';
 navbar.addEventListener("mouseover", function () {
   navbar.style.opacity = '1';
@@ -11,7 +12,7 @@ navbar.addEventListener("mouseout", function () {
 
 
 
-const navbar = document.getElementById('navbar');
+
 let prevScrollPos = window.scrollY || document.documentElement.scrollTop;
 
 window.addEventListener('scroll', () => {
@@ -30,10 +31,10 @@ window.addEventListener('scroll', () => {
 // -----------PHOTO DE PROFIL CHANGE MOUSEOVER-----------
 
 const profilPic = document.getElementById('pp');
-const initialSrc = "./Images/julien_pp_3d.png"
+const initialSrc = "Images/julien_pp_3d.png";
 
 profilPic.addEventListener("mouseover", () => {
-  profilPic.src = "./Images/0020.png"
+  profilPic.src = "/Images/0020.png"
 });
 
 profilPic.addEventListener("mouseout", () => {
@@ -41,20 +42,20 @@ profilPic.addEventListener("mouseout", () => {
 });
 // Flip des cartes
 
-document.addEventListener("DOMContentLoaded", function () {
-    // Fonction pour inverser la carte
-    function flipCard() {
-      var card = this.querySelector(".interieur");
-      card.style.transform = card.style.transform === "rotateY(180deg)" ? "rotateY(0deg)" : "rotateY(180deg)";
-    }
+// document.addEventListener("DOMContentLoaded", function () {
+//     // Fonction pour inverser la carte
+//     function flipCard() {
+//       var card = this.querySelector(".interieur");
+//       card.style.transform = card.style.transform === "rotateY(180deg)" ? "rotateY(0deg)" : "rotateY(180deg)";
+//     }
 
-    // Ajouter l'événement à chaque élément avec la classe fliprojet
-    var flipElements = document.querySelectorAll(".fliprojet");
-    flipElements.forEach(function (element) {
-      element.addEventListener("mouseenter", flipCard);
-      element.addEventListener("mouseleave", flipCard);
-    });
-  });
+//     // Ajouter l'événement à chaque élément avec la classe fliprojet
+//     var flipElements = document.querySelectorAll(".fliprojet");
+//     flipElements.forEach(function (element) {
+//       element.addEventListener("mouseenter", flipCard);
+//       element.addEventListener("mouseleave", flipCard);
+//     });
+//   });
 
 // Add a transition effect for a smooth fade
 
